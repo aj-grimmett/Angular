@@ -1,0 +1,12 @@
+<h2>Products</h2>
+<label>Product name:</label>
+<input type="text" class="form-control" (input)="onUpdateProductName($event)" />
+<p>{{ enteredValue }}</p>
+<br />
+<button class="btn btn-secondary" [disabled]="!addProduct" (click)="onClick()">
+  Add Product
+</button>
+<p>{{ addProductStatus }}</p>
+<br /><br />
+<product></product>
+<product></product>
